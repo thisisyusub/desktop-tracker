@@ -5,6 +5,7 @@
 list(APPEND FLUTTER_PLUGIN_LIST
   connectivity_plus
   flutter_desktop_sleep
+  sqlcipher_flutter_libs
   sqlite3_flutter_libs
 )
 

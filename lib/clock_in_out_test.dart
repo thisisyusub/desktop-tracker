@@ -17,8 +17,8 @@ class _ClockInOutTestState extends State<ClockInOutTest> {
   void initState() {
     super.initState();
 
-    final _db = MyDatabase();
-    _db.select(_db.osLog).get().then(
+    final db = MyDatabase();
+    db.select(db.osLog).get().then(
       (logs) {
         _logs.value = [...logs];
       },
@@ -29,7 +29,7 @@ class _ClockInOutTestState extends State<ClockInOutTest> {
       (String? s) async {
         if (s != null) {
           try {
-            await _db.into(_db.osLog).insert(
+            await db.into(db.osLog).insert(
                   OsLogCompanion.insert(
                     title: s,
                     logDate: DateTime.now().toIso8601String(),
@@ -39,7 +39,7 @@ class _ClockInOutTestState extends State<ClockInOutTest> {
             print('$e => $s');
           }
 
-          final logs = await _db.select(_db.osLog).get();
+          final logs = await db.select(db.osLog).get();
           setState(() {
             _logs.value = [];
             _logs.value = [...logs];
