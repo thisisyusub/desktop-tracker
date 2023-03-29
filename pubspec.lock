@@ -283,7 +283,7 @@ packages:
     description:
       path: "."
       ref: master
-      resolved-ref: "92355f12171c0bccc848a55758abd5030eda88e4"
+      resolved-ref: b63d0d3b559b01b46af2844e8dedd3ad03f897d2
       url: "git@github.com:thisisyusub/flutter_desktop_sleep.git"
     source: git
     version: "0.0.2"
@@ -638,14 +638,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.10.1"
-  sqlite3_flutter_libs:
-    dependency: "direct main"
-    description:
-      name: sqlite3_flutter_libs
-      sha256: "02f80aea54a19a36b347dedf6d4181ecd9107f5831ea6139cfd0376a3de197ba"
-      url: "https://pub.dev"
-    source: hosted
-    version: "0.5.13"
   sqlparser:
     dependency: transitive
     description:
